@@ -1,4 +1,5 @@
 import { awscdk } from 'projen';
+import { CodeArtifactAuthProvider } from 'projen/lib/release';
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Julian Michel',
   authorAddress: 'mail@julianmichel.de',
@@ -7,7 +8,16 @@ const project = new awscdk.AwsCdkConstructLibrary({
   jsiiVersion: '~5.0.0',
   name: 'projen-codeartifact-2',
   projenrcTs: true,
-  repositoryUrl: 'https://github.com/mail/projen-codeartifact-2.git',
+  repositoryUrl: 'https://github.com/jumic/projen-codeartifact-2.git',
+
+  codeArtifactOptions: {
+    roleToAssume: 'arn:aws:iam::857739166276:role/GitHubCodeArtifact',
+    authProvider: CodeArtifactAuthProvider.GITHUB_OIDC,
+  },
+
+  releaseToNpm: true,
+  npmRegistryUrl: 'https://jumic-sandbox-857739166276.d.codeartifact.eu-west-1.amazonaws.com/npm/projen-codeartifact-2/',
+
 
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
