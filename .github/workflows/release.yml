@@ -120,6 +120,6 @@ jobs:
       - name: Release
         env:
           NPM_DIST_TAG: latest
-          NPM_REGISTRY: jumic-sandbox-857739166276.d.codeartifact.eu-west-1.amazonaws.com/npm/projen-codeartifact-2/
+          NPM_REGISTRY: jumic-sandbox-857739166276.d.codeartifact.eu-west-1.amazonaws.com/npm/my-repo/
           NPM_CONFIG_PROVENANCE: "true"
         run: npx -p publib@latest publib-npm

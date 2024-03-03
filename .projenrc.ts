@@ -16,8 +16,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   },
 
   releaseToNpm: true,
-  npmRegistryUrl: 'https://jumic-sandbox-857739166276.d.codeartifact.eu-west-1.amazonaws.com/npm/projen-codeartifact-2/',
-
+  npmRegistryUrl: 'https://jumic-sandbox-857739166276.d.codeartifact.eu-west-1.amazonaws.com/npm/my-repo/',
 
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
