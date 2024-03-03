@@ -5,7 +5,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   authorAddress: 'mail@julianmichel.de',
   cdkVersion: '2.1.0',
   defaultReleaseBranch: 'main',
-  jsiiVersion: '~5.0.0',
+  jsiiVersion: '~5.3.0',
   name: 'projen-codeartifact-2',
   projenrcTs: true,
   repositoryUrl: 'https://github.com/jumic/projen-codeartifact-2.git',
